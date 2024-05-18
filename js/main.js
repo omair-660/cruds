@@ -49,7 +49,7 @@ function display() {
               <td>${content[i].Description}</td>
               <td>${content[i].category}</td>
               <td> <button class="btn btn-outline-danger py-1" onclick="deleteItem(${i})">Delete</button></td>
-              <td> <button class="btn btn-outline-success py-1" onclick="updaeItem(${i})">Update</button></td>
+              <td> <button class="btn btn-outline-primary py-1" onclick="updaeItem(${i})">Update</button></td>
              
           </tr>
       `
