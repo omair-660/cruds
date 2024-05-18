@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cruds1</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <div class="container py-5 my-5">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="inputName" placeholder="Name">
+            <label for="inputName">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="inputPrice" placeholder="Price">
+            <label for="inputPrice">Price</label>
+          </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Leave a comment here" id="Description" style="height: 100px"></textarea>
+            <label for="Description">Description</label>
+          </div>
+        <div class="item form-floating mb-3">
+            <input list="categories" id="category" name="category" class="form-control">
+            <datalist id="categories">
+                <option value="Mobile">
+                <option value="Tv">
+                <option value="Laptop">
+                <option value="Tablet">
+            </datalist>
+            <label for="category">Category</label>
+        </div>
+        <div class="btn btn-outline-success w-100" id="btnAdd">Add Product</div>
+        
+    </div>
+    <div class="count pb-4 mb-3 fw-bolder text-center"  id="count"></div>
+    <table class="table text-center container">
+        <thead>
+          <tr>
+            <th scope="row">#</th>
+            
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Description</th>
+            <th scope="col">Category</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Updete</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        
+        </tbody>
+      </table>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
